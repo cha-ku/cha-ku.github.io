@@ -1,18 +1,8 @@
 ---
 layout: page
 title: About me
-subtitle: Why you should absolutely take me out for a glass of chai
 ---
 
-My name is cha-ku. I have the following qualities:
-
-- I am cool yo
-- I drink too much chai
-- I have dementia
-- I drink too much chai
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now. Might be the dementia kicking in.
+Hello, I am Chaitanya. I like coding in Python and C++. I am interested in maintaining build infrastructure and automating workflows.
+Very recently I have started taking interest in low-level systems programming.
+If you have a project that I can help with, please do drop an email - ckukde at gmail dot com
