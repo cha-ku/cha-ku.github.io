@@ -31,22 +31,25 @@ The code for this is available [on github](https://github.com/cha-ku/fractal-dem
 Here is a small gallery of the images obtained 
 
 ![original img](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/orig_mb.bmp)
-*Original Mandelbrot*
-
+<center><i>Original Mandelbrot</i></center> 
 
 ![head and shoulders](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/zoom_mb1.bmp)
-*Intersection between the two heads*
+<center><i>Intersection between the two heads</i></center>
 
 ![seahorse1](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/seahorse1.bmp)
-*The seahorse valley*
+<center><i>The seahorse valley</i></center>
 
 ![seahorse2](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/seahorse2.bmp)
-*Zooming in on the seahorse valley*
+<center><i>Zooming in on the seahorse valley</i></center> 
 
 ![zoom1](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/zoom_seq1.bmp)
+<center><i>Zoom</i></center> 
 
 ![zoom2](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/zoom_seq2.bmp)
+<center><i>More Zoom</i></center> 
 
 ![zoom3](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/zoom_seq3.bmp)
+<center><i>Most Zoom</i></center> 
 
 ![final one I promise](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/test.bmp)
+<center><i>Final one I promise</i></center> 
