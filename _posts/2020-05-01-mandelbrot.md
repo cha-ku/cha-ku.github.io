@@ -103,7 +103,7 @@ Average timing for v1.2:
 ![v1.2Timing](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/Screenshot_20200504_013930.png)
 
 Performance for v1.2:
-![v1.2Perf](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/Screenshot_20200505_160516.png)
+![v1.2Perf](https://raw.githubusercontent.com/cha-ku/fractal-demo/master/output/Screenshot_20200505_155543.png)
 
 Notice the low number of cache misses and a 3x reduction in execution time. The only change from v1.1 to [v1.2](https://github.com/cha-ku/fractal-demo/tree/v1.2) was the addition of `#pragma omp parallel for` directive.
 
