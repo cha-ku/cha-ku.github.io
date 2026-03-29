@@ -1,0 +1,16 @@
+---
+layout: page
+title: "Weekly Notes"
+---
+
+<div class="post-list">
+  {% assign weeknotes = site.tags["weeknotes"] %}
+  {% for post in weeknotes %}
+    <div class="tag-entry">
+      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      <div class="entry-date">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+      </div>
+    </div>
+  {% endfor %}
+</div>
