@@ -64,3 +64,153 @@
 .highlight .lineno {color:rgba(0,0,0,0.3);padding: 0 10px;-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
 .lineno::selection {background-color: transparent;} /* Other major browsers */
+
+/* --- Dark mode syntax highlighting (Monokai-style) --- */
+
+html[data-theme="dark"] .highlight .c,
+html[data-theme="dark"] .highlight .cm,
+html[data-theme="dark"] .highlight .c1,
+html[data-theme="dark"] .highlight .cs { color: #75715e; font-style: italic; }
+
+html[data-theme="dark"] .highlight .err { color: #f92672; background-color: transparent; }
+
+html[data-theme="dark"] .highlight .k,
+html[data-theme="dark"] .highlight .kc,
+html[data-theme="dark"] .highlight .kd,
+html[data-theme="dark"] .highlight .kp,
+html[data-theme="dark"] .highlight .kr { color: #66d9ef; font-weight: bold; }
+
+html[data-theme="dark"] .highlight .kt { color: #a6e22e; font-weight: bold; }
+
+html[data-theme="dark"] .highlight .s,
+html[data-theme="dark"] .highlight .s1,
+html[data-theme="dark"] .highlight .s2,
+html[data-theme="dark"] .highlight .sb,
+html[data-theme="dark"] .highlight .sc,
+html[data-theme="dark"] .highlight .sd,
+html[data-theme="dark"] .highlight .se,
+html[data-theme="dark"] .highlight .sh,
+html[data-theme="dark"] .highlight .si,
+html[data-theme="dark"] .highlight .sx { color: #e6db74; }
+
+html[data-theme="dark"] .highlight .sr { color: #e6db74; }
+html[data-theme="dark"] .highlight .ss { color: #ae81ff; }
+
+html[data-theme="dark"] .highlight .m,
+html[data-theme="dark"] .highlight .mf,
+html[data-theme="dark"] .highlight .mh,
+html[data-theme="dark"] .highlight .mi,
+html[data-theme="dark"] .highlight .mo,
+html[data-theme="dark"] .highlight .il { color: #ae81ff; }
+
+html[data-theme="dark"] .highlight .na { color: #a6e22e; }
+html[data-theme="dark"] .highlight .nb { color: #f8f8f2; }
+html[data-theme="dark"] .highlight .nc { color: #a6e22e; font-weight: bold; }
+html[data-theme="dark"] .highlight .no { color: #66d9ef; }
+html[data-theme="dark"] .highlight .ni { color: #f8f8f2; }
+html[data-theme="dark"] .highlight .ne { color: #a6e22e; font-weight: bold; }
+html[data-theme="dark"] .highlight .nf { color: #a6e22e; font-weight: bold; }
+html[data-theme="dark"] .highlight .nn { color: #f8f8f2; }
+html[data-theme="dark"] .highlight .nt { color: #f92672; }
+html[data-theme="dark"] .highlight .nv,
+html[data-theme="dark"] .highlight .vc,
+html[data-theme="dark"] .highlight .vg,
+html[data-theme="dark"] .highlight .vi { color: #f8f8f2; }
+
+html[data-theme="dark"] .highlight .o,
+html[data-theme="dark"] .highlight .ow { color: #f92672; font-weight: bold; }
+
+html[data-theme="dark"] .highlight .w { color: #f8f8f2; }
+
+html[data-theme="dark"] .highlight .cp { color: #75715e; font-weight: bold; }
+
+html[data-theme="dark"] .highlight .ge { font-style: italic; }
+html[data-theme="dark"] .highlight .gs { font-weight: bold; }
+html[data-theme="dark"] .highlight .gh { color: #75715e; }
+html[data-theme="dark"] .highlight .gu { color: #75715e; }
+html[data-theme="dark"] .highlight .gr { color: #f92672; }
+html[data-theme="dark"] .highlight .gt { color: #f92672; }
+html[data-theme="dark"] .highlight .go { color: #888; }
+html[data-theme="dark"] .highlight .gp { color: #75715e; }
+
+html[data-theme="dark"] .highlight .gd { color: #f92672; background-color: transparent; }
+html[data-theme="dark"] .highlight .gd .x { color: #f92672; background-color: transparent; }
+html[data-theme="dark"] .highlight .gi { color: #a6e22e; background-color: transparent; }
+html[data-theme="dark"] .highlight .gi .x { color: #a6e22e; background-color: transparent; }
+
+html[data-theme="dark"] .highlight .lineno { color: rgba(255,255,255,0.3); }
+html[data-theme="dark"] .lineno::-moz-selection { background-color: transparent; }
+html[data-theme="dark"] .lineno::selection { background-color: transparent; }
+
+/* Apply same dark highlighting when OS prefers dark and no manual override */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .highlight .c,
+  html:not([data-theme="light"]) .highlight .cm,
+  html:not([data-theme="light"]) .highlight .c1,
+  html:not([data-theme="light"]) .highlight .cs { color: #75715e; font-style: italic; }
+
+  html:not([data-theme="light"]) .highlight .err { color: #f92672; background-color: transparent; }
+
+  html:not([data-theme="light"]) .highlight .k,
+  html:not([data-theme="light"]) .highlight .kc,
+  html:not([data-theme="light"]) .highlight .kd,
+  html:not([data-theme="light"]) .highlight .kp,
+  html:not([data-theme="light"]) .highlight .kr { color: #66d9ef; font-weight: bold; }
+
+  html:not([data-theme="light"]) .highlight .kt { color: #a6e22e; font-weight: bold; }
+
+  html:not([data-theme="light"]) .highlight .s,
+  html:not([data-theme="light"]) .highlight .s1,
+  html:not([data-theme="light"]) .highlight .s2,
+  html:not([data-theme="light"]) .highlight .sb,
+  html:not([data-theme="light"]) .highlight .sc,
+  html:not([data-theme="light"]) .highlight .sd,
+  html:not([data-theme="light"]) .highlight .se,
+  html:not([data-theme="light"]) .highlight .sh,
+  html:not([data-theme="light"]) .highlight .si,
+  html:not([data-theme="light"]) .highlight .sx { color: #e6db74; }
+
+  html:not([data-theme="light"]) .highlight .sr { color: #e6db74; }
+  html:not([data-theme="light"]) .highlight .ss { color: #ae81ff; }
+
+  html:not([data-theme="light"]) .highlight .m,
+  html:not([data-theme="light"]) .highlight .mf,
+  html:not([data-theme="light"]) .highlight .mh,
+  html:not([data-theme="light"]) .highlight .mi,
+  html:not([data-theme="light"]) .highlight .mo,
+  html:not([data-theme="light"]) .highlight .il { color: #ae81ff; }
+
+  html:not([data-theme="light"]) .highlight .na { color: #a6e22e; }
+  html:not([data-theme="light"]) .highlight .nb { color: #f8f8f2; }
+  html:not([data-theme="light"]) .highlight .nc { color: #a6e22e; font-weight: bold; }
+  html:not([data-theme="light"]) .highlight .no { color: #66d9ef; }
+  html:not([data-theme="light"]) .highlight .ni { color: #f8f8f2; }
+  html:not([data-theme="light"]) .highlight .ne { color: #a6e22e; font-weight: bold; }
+  html:not([data-theme="light"]) .highlight .nf { color: #a6e22e; font-weight: bold; }
+  html:not([data-theme="light"]) .highlight .nn { color: #f8f8f2; }
+  html:not([data-theme="light"]) .highlight .nt { color: #f92672; }
+  html:not([data-theme="light"]) .highlight .nv,
+  html:not([data-theme="light"]) .highlight .vc,
+  html:not([data-theme="light"]) .highlight .vg,
+  html:not([data-theme="light"]) .highlight .vi { color: #f8f8f2; }
+
+  html:not([data-theme="light"]) .highlight .o,
+  html:not([data-theme="light"]) .highlight .ow { color: #f92672; font-weight: bold; }
+
+  html:not([data-theme="light"]) .highlight .w { color: #f8f8f2; }
+
+  html:not([data-theme="light"]) .highlight .cp { color: #75715e; font-weight: bold; }
+
+  html:not([data-theme="light"]) .highlight .gd { color: #f92672; background-color: transparent; }
+  html:not([data-theme="light"]) .highlight .gd .x { color: #f92672; background-color: transparent; }
+  html:not([data-theme="light"]) .highlight .gi { color: #a6e22e; background-color: transparent; }
+  html:not([data-theme="light"]) .highlight .gi .x { color: #a6e22e; background-color: transparent; }
+  html:not([data-theme="light"]) .highlight .gh { color: #75715e; }
+  html:not([data-theme="light"]) .highlight .gu { color: #75715e; }
+  html:not([data-theme="light"]) .highlight .gr { color: #f92672; }
+  html:not([data-theme="light"]) .highlight .gt { color: #f92672; }
+  html:not([data-theme="light"]) .highlight .go { color: #888; }
+  html:not([data-theme="light"]) .highlight .gp { color: #75715e; }
+
+  html:not([data-theme="light"]) .highlight .lineno { color: rgba(255,255,255,0.3); }
+}

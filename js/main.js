@@ -5,7 +5,49 @@ var main = {
   bigImgEl : null,
   numImgs : null,
 
+  darkMode : {
+    init : function() {
+      // Sync icon with the current theme (set by anti-FOUC inline script)
+      var current = document.documentElement.getAttribute('data-theme');
+      main.darkMode.setIcon(current === 'dark');
+
+      // Listen for OS-level preference changes (only when no manual override)
+      if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+          if (!localStorage.getItem('theme')) {
+            main.darkMode.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+      }
+
+      $('#theme-toggle').on('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        main.darkMode.setTheme(next, true);
+      });
+    },
+
+    setTheme : function(theme, persist) {
+      document.documentElement.setAttribute('data-theme', theme);
+      main.darkMode.setIcon(theme === 'dark');
+      if (persist) {
+        localStorage.setItem('theme', theme);
+      }
+    },
+
+    setIcon : function(isDark) {
+      if (isDark) {
+        $('#theme-icon').removeClass('fa-moon-o').addClass('fa-sun-o');
+      } else {
+        $('#theme-icon').removeClass('fa-sun-o').addClass('fa-moon-o');
+      }
+    }
+  },
+
   init : function() {
+    // Initialize dark mode toggle
+    main.darkMode.init();
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
